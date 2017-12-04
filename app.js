@@ -12,15 +12,17 @@
 *   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 *   See the License for the specific language governing permissions and
 **/
-
+															
 var express = require('express');
 
-var PORT = 80;
-
-var app = express();
-app.get('/', function (req, res) {
+var PORT = 80;								
+var changecontent = 30;		
+var app = express();	
+app.get('/', function (			req, res) {
   res.send('Welcome to Bluemix DevOps with Docker. Lets go use the Continuous Delivery Service');
 });
 
-app.listen(PORT)
+app.listen(PORT )
 console.log(' Application Running on port' + PORT);
+
+	
